@@ -64,7 +64,8 @@ nav ul {
 }
 nav ul li {
   list-style: none;
-  display: inline-block;
+  display: inline-table;
+  /* display: inline-block; */
   float: right;
   line-height: 80px;
 }
@@ -73,7 +74,7 @@ nav ul li a {
   text-decoration: none;
   font-size: 14px;
   font-family: Arial;
-  padding: 8px 20px;
+  padding: 0px 20px;
   color: peachpuff;
 }
 
