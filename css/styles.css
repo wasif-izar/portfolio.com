@@ -61,12 +61,10 @@ nav ul {
   margin: 0;
   padding: 0;
   margin-left: 10px;
-  display: inline-table;
 }
 nav ul li {
   list-style: none;
-  display: inline-table;
-  /* display: inline-block;. */
+  display: inline-block;
   float: right;
   line-height: 80px;
 }
@@ -237,8 +235,4 @@ footer {
   h2 {
     line-height: 1;
   }
-}
-
-.menuindex {
-  background-color: #46344e;
 }
