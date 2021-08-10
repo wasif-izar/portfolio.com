@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Ubuntu:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
 *{
     padding: 0;
@@ -14,8 +15,21 @@ body{
     /* background-color: tomato; */
 }
 .nav-con{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     height: 100px;
     background-color: #0a192f;   
+}
+.nav-con .name{
+    position: absolute;
+    left: 60px;
+    top: 35px;
+}
+.nav-con .name p{
+    color: #e6f1ff;/*white*/
+    font-family: 'Courgette', sans-serif;
+    font-size: 30px;
 }
 .nav{
     background-color: #0a192f;
@@ -40,27 +54,28 @@ body{
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%2364FFDAFF' stroke-width='4' stroke-dasharray='1%2c 8' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
 }
 .nav ul li a{
-    color: #fff;
+    color: #e6f1ff;/*white*/
     padding: inherit;
 }
 .nav ul li a:hover{
-    color: #64ffda;;
+    color: #64ffda;/*green*/
 }
 .nav ul li a span{
     margin-right:3px;
-    color: #64ffda;
+    color: #64ffda;/*green*/
 }
 
 
 /* start of mobile nav, */
 .mv-nav{
+
     display: none;
     position: absolute;
     margin-left: 30%;
     width: 70%;
     margin-top: 100px;
-    background-color: #112240;
-    /* height: 100vh; */
+    background-color: #112240 !important;
+    /* height: 100%; */
     text-align: center;
 }
 
@@ -77,15 +92,15 @@ body{
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%2364FFDAFF' stroke-width='4' stroke-dasharray='1%2c 8' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
 } */
 .mv-nav ul li a{
-    color: #fff;
+    color: #e6f1ff;/*white*/
     padding: inherit;
 }
 .mv-nav ul li a:hover{
-    color: #64ffda;;
+    color: #64ffda;/*green*/
 }
 .mv-nav ul li a span{
     margin-right:3px;
-    color: #64ffda;
+    color: #64ffda;/*green*/
 }
 
 .m-btn{
@@ -103,7 +118,7 @@ body{
     display: none;
 }
 
-@media(max-width:850px){
+@media(max-width:875px){
     #btnm{
         display: block;
     }
@@ -114,3 +129,202 @@ body{
 
 
 /* end of mobile nav, */
+
+/* start of intro, */
+.intro{
+    margin-left: 15%;
+    margin-top: 125px;
+    margin-right: 85px;
+    /* line-height: 50px; */
+    
+}
+.intro p{
+    color: #64ffda;/*green*/
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: 400;
+}
+.intro h3{
+    margin-top: 15px;
+    color: #e6f1ff;/*white*/
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 6.1rem;
+    font-weight: 700;
+}
+.intro h4{
+    color: #a8b2d1;/*light slate*/
+    margin-top: 10px;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.intro .desc{
+    color: #8892b0;/*slate*/
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 27px;
+}
+ /* .intro .desc a{ */
+    /* color: #64ffda;green */
+/* } */
+/* .intro .desc a:hover{
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .5s ease-in-out;
+    text-decoration: underline;
+}  */
+
+ .intro .desc a {
+    color: #64ffda;;
+    text-decoration: none;
+    background:  no-repeat 0 100%;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 1px;
+    transition: background-size .3s ease;
+  }
+  
+  .intro .desc a:hover, a:focus {
+    background-size: 100% 1px;
+  }
+
+  .intro .resume{
+      cursor: pointer;
+      margin-top: 25px;
+      color: #64ffda;
+      width: max-content;
+      padding: 20px;
+      border:#64ffda 2px solid ;
+      border-radius: 5px;
+      transition:border  .3s ease;
+      transition: transform .4s ease;
+      font-weight: 700;
+  }
+  .intro .resume:hover, .resume:focus {
+      transform: scale(1.04,1.04);
+      transition: transform .4s ease;
+    background-color: #64ffda;
+    color: #0a192f;
+    border: #112240 2px solid ;
+  }
+
+
+/* end of intro, */
+
+/* Start of contact */
+/* .mail{
+    position:  fixed;
+    bottom: 0px;
+    right: 65px;
+} */
+.mail a{
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif; */
+    font-family: 'Courier New', Courier, monospace;
+    position:  fixed;
+    bottom: 120px;
+    right: 65px;
+    margin-top: 25px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: #a8b2d1;
+    transition: .5s all;
+    font-size: 16px;
+}
+.mail p{
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif; */
+    font-family: 'Courier New', Courier, monospace;
+    position:  fixed;
+    bottom: 0px;
+    right: 65px;
+    margin-top: 25px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: #a8b2d1;
+    font-size: 16px;
+}
+
+.mail a:hover{
+    color: #64ffda;/*green*/
+    transition: .5s all;
+    font-size: 17px;
+}
+.social{
+    position: fixed;
+    bottom: 0;
+    left: 65px;
+}
+.social i{
+    font-size: 24px;
+    color: #a8b2d1;
+    display: flex;
+    margin-bottom: 35px;
+    flex-direction: column;
+    transition: .5s all;
+}
+.social p{
+    font-family: 'Courier New', Courier, monospace;
+    /* margin-top: 25px; */
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    color: #a8b2d1;
+    font-size: 16px;
+}
+
+.social i:hover{
+    transition: .5s;
+    color: #64ffda;/*green*/
+    font-size: 28px;
+    margin-bottom: 31px;
+   
+}
+.social a .fa-envelope-o{
+    display: none;
+}
+@media(max-width:875px){
+    .mail{
+        display: none;
+    }
+    .social p{
+        display: none;
+    }
+    .social{
+        position: relative;
+        top: 25px;
+        bottom: 25px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .social i{
+        display: inline-block;
+        margin:35px 15px ;
+    }
+    .social a .fa-envelope-o{
+        display:inline-flex;
+    }
+    .mail a{
+        position: relative;
+        bottom: 25px;
+        writing-mode: horizontal-tb;
+        text-orientation: mixed;
+        right: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .intro{
+        margin-left: 20px;
+        margin-top: 60px;
+        margin-right: 20px;
+    }
+    .intro h3{
+        font-size: 4rem;
+    }
+    .intro h4{
+        font-size: 1.4rem;
+    }
+    .intro .desc{
+        font-size: 16px;
+    }
+}
+/* End of contact */

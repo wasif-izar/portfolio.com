@@ -1,10 +1,12 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wasif Izhar Portfolio</title>
+    <title>Wasif Izar | Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="index.css">
 </head>
 
@@ -12,6 +14,9 @@
 
     <!-- start nav menu -->
     <div class="nav-con">
+        <div class="name">
+            <p>Wasif Izar</p>
+        </div>
         <div id="nav" class="nav">
             <ul>
                 <li><a href="about.html">About <span> ( ) </span> </a></li>
@@ -39,6 +44,47 @@
     </div>
     <!-- End nav menu -->
 
+    <!-- start of section, -->
+    <div id="section" class="section">
+        <!-- start of intro, -->
+        <div class="intro">
+            <p>Hi, my name is</p>
+            <h3>Wasif Izar.</h3>
+            <h4>Computer Science and Engg Student.</h4>
+            <p class="desc">
+                I'm pursuing my B.E(Bachelor of Engineering) in CSE<br>
+                I love to develop websites and android applications<br> You are welcome to take a look at my <a
+                    href="#">work</a>.
+            </p>
+            <div class="resume">My Resume</div>
+        </div>
+
+        <!-- End of intro, -->
+
+        <!-- Start of contact -->
+        <div class="contact">
+            <div class="social">
+                <a href="https://github.com/wasif-izar/" target="_blank"><i class="fa fa-github"
+                        aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/wasif-izar-a32935171/" target="_blank"><i class="fa fa-linkedin"
+                        aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/wasif_izhar_32/" target="_blank"><i class="fa fa-instagram"
+                        aria-hidden="true"></i></a>
+                <a href="https://www.twitter.com/wasif_izhar/" target="_blank"><i class="fa fa-twitter"
+                        aria-hidden="true"></i></a>
+                <a href="mailto:wasifizar99@gmail.com" target="_blank"><i class="fa fa-envelope-o"
+                        aria-hidden="true"></i></a>
+                <p> ──────────</p>
+            </div>
+            <div class="mail">
+                <a href="mailto:wasifizar99@gmail.com" target="_blank">wasifizar99@gmail.com</a>
+                <p> ──────────</p>
+            </div>
+        </div>
+        <!-- End of contact -->
+    </div>
+    <!-- End of section -->
+
 
 </body>
 
@@ -47,18 +93,20 @@
     let btnx = document.querySelector('#btnx');
     let nav = document.querySelector('.nav');
     let mv_nav = document.querySelector('.mv-nav');
-    let a = 1;
+    let sec = document.querySelector('.section');
 
     btnm.addEventListener('click', () => {
         mv_nav.setAttribute("style", "display:block");
         btnm.setAttribute("style", "display:none");
         btnx.setAttribute("style", "display:block");
+        // sec.setAttribute("style", "filter: blur(5px);");
     })
 
     btnx.addEventListener('click', () => {
         mv_nav.setAttribute("style", "display:none");
         btnm.setAttribute("style", "display:block");
         btnx.setAttribute("style", "display:none");
+        // sec.setAttribute("style", "filter: blur(0px);");
     })
     if (mv_nav.style.display == 'none') {
         btnx.setAttribute("style", "display:none");
