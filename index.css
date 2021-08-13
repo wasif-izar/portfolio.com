@@ -191,7 +191,7 @@ body{
       cursor: pointer;
       margin-top: 25px;
       color: #64ffda;
-      width: max-content;
+      width: fit-content;
       padding: 20px;
       border:#64ffda 2px solid ;
       border-radius: 5px;
