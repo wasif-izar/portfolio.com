@@ -187,7 +187,7 @@ body{
     background-size: 100% 1px;
   }
 
-  .intro .resume{
+  .intro .resume p{
       cursor: pointer;
       margin-top: 25px;
       color: #64ffda;
@@ -198,8 +198,9 @@ body{
       transition:border  .3s ease;
       transition: transform .4s ease;
       font-weight: 700;
+      font-family: 'Ubuntu', sans-serif;
   }
-  .intro .resume:hover, .resume:focus {
+  .intro .resume p:hover, .resume p:focus {
       transform: scale(1.04,1.04);
       transition: transform .4s ease;
     background-color: #64ffda;
