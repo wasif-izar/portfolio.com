@@ -10,6 +10,45 @@
     text-decoration: none;
     font-family: 'Ubuntu' , sans-serif;
 }
+/* .construction */
+.construction{
+    z-index: 9999;
+    background-color: #041127;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 10%;
+    bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    column-gap: 50px;
+    border-radius: 25px;
+}
+.construction .pp{
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+    color: #e6f1ff;
+    padding-top: 20%;
+}
+.construction p{
+    margin-bottom: 30px;
+}
+.construction a{
+    text-align: center;
+    color: #6aaaf8;
+}
+.construction a:hover{
+    color: #64ffda;
+}
+.back-blur{
+    filter: blur(5px);
+}
+
+/* .construction */
+
 body{
     background-color:#112240; 
     /* background-color: tomato; */
