@@ -9,6 +9,9 @@
     <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" /> -->
     <script src="https://kit.fontawesome.com/33bbc86679.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="./assets/flickity.min.css">
+   
 </head>
 
 <body>
@@ -21,7 +24,6 @@
     </div> -->
     <!-- end of     construction, -->
 
-    <div class="back-blur">
         <!-- start nav menu -->
         <div class="nav-con">
             <div class="name">
@@ -214,6 +216,62 @@
             </div>
             <!-- End of Work -->
 
+            
+        <!--Start of certificate-->
+        <section id="gtco-our-team" data-section="Menu">
+            <div>
+                <h1 class="animate-box" style="text-align: center;" data-animate-effect="fadeIn"><u>MENU</u></h1>
+            </div>
+    
+        <div class="carouse animate-box" data-animate-effect="fadeIn">
+
+            <div class="carousel-cell"><img src="./images/certificates/1-cer.png" class="p"><p class= "n">TCS YEP Certificate</p><a href="./docs/tcs-yep.pdf" target="_blank"><p class="verify">Verify certificate</p></a></div>
+
+            <div class="carousel-cell"><img src="./images/certificates/2-cer.png" class="p"><p class= "n">Dive Into Android Dev using Kotlin</p><a href="https://www.udemy.com/certificate/UC-383f2827-c485-4bb8-ad87-bf688a0a59ae/" target="_blank"><p class="verify">Verify certificate</p></a></div>
+
+            <div class="carousel-cell"><img src="./images/certificates/3-cer.png" class="p"><p class= "n">Kotlin language for Java Developers</p><a href="https://www.coursera.org/account/accomplishments/verify/S3DGCC5WGUUA" target="_blank"><p class="verify">Verify certificate</p></a></div>
+
+            
+            <div class="carousel-cell"><img src="./images/certificates/4-cer.png" class="p"><p class= "n">Crash Course on Python</p><a href="https://www.coursera.org/account/accomplishments/verify/BA6NX3Z88R75" target="_blank"><p class="verify">Verify certificate</p></a></div>
+
+            
+            <div class="carousel-cell"><img src="./images/certificates/5-cer.png" class="p"><p class= "n">Introduction to Machine Learning</p><a href="https://www.coursera.org/account/accomplishments/verify/242Z3DW6VH4J" target="_blank"><p class="verify">Verify certificate</p></a></div>
+
+            
+            <div class="carousel-cell"><img src="./images/certificates/6-cer.png" class="p"><p class= "n">Become a Software Developer </p><a href="./docs/Become a Software Developer.pdf" target="_blank"><p class="verify">Verify certificate</p></a></div>
+
+            
+            <div class="carousel-cell"><img src="./images/certificates/7-cer.png" class="p"><p class= "n">Become a Data Analyst</p><a href="./docs/Become a Data Analyst.pdf" target="_blank"><p class="verify">Verify certificate</p></a></div>
+
+            <div class="carousel-cell"><img src="./images/certificates/8-cer.png" class="p"><p class= "n">Master InDemand Professional Soft Skills </p><a href="./docs/Master InDemand Professional Soft Skills.pdf" target="_blank"><p class="verify">Verify certificate</p></a></div>
+
+            <div class="carousel-cell"><img src="./images/certificates/9-cer.png" class="p"><p class= "n">Git and GitHub crash course </p><a href="./docs/Git and GitHub crash course.pdf" target="_blank"><p class="verify">Verify certificate</p></a></div>
+
+            <div class="carousel-cell"><img src="./images/certificates/10-cer.png" class="p"><p class= "n">Build a Face Recognition Application using python </p><a href="https://www.guvi.in/verify-certificate?id=1v5l627Y91Hyb84C30" target="_blank"><p class="verify">Verify certificate</p></a></div>
+
+            <div class="carousel-cell"><img src="./images/certificates/11-cer.png" class="p"><p class= "n">TCS iON Career Edge - Young Professional</p><a href="./docs/TCS iON Career Edge - Young Professional.pdf" target="_blank"><p class="verify">Verify certificate</p></a></div>
+
+        </div>
+    
+        </section>
+          <script src="./assets/flickity.js"></script>
+          <script src="./assets/jquery.js"></script>
+          <script>
+                var elem = document.querySelector('.carouse');
+                var flkty = new Flickity( elem, {
+                // options
+                cellalign: 'right',
+                pageDots: false,
+                groupCells: '20%',
+                selectedAttraction: 0.03,
+                friction: 0.15
+                });
+                var flkty = new Flickity( '.carouse', {
+                // options
+                });
+          </script>
+        <!--End of certificate-->
+
             <!-- Start of contact -->
             <section id="contact-nav"></section>
             <div class="contact">
@@ -239,7 +297,6 @@
         </div>
         <!-- End of section -->
 
-    </div>
 
 </body>
 
@@ -275,5 +332,8 @@
     }
 
 </script>
+
+
+
 
 </html>
