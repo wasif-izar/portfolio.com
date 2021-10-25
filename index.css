@@ -330,13 +330,13 @@ body{
     margin-right: 15%; 
 }
 
-.experience-con h1, .work-con h1{
+.experience-con h1, .work-con h1, .certificate-con h1{
     color: #fff;
     font-size: 28px;
     border-bottom: 3px solid #233554;
    
 }
-.experience-con h1 span, .work-con h1 span{
+.experience-con h1 span, .work-con h1 span, .certificate-con h1 span{
     color: #64ffda;
 }
 
