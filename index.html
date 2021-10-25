@@ -12,12 +12,12 @@
 
 <body>
     <!-- class construction -->
-    <div class="construction">
+    <!-- <div class="construction">
         <div class="pp">
             <p>Sorry! Iam under Construction.....<br>Know Me by click below</p>
             <a href="https://wasif-izar.github.io/simple-portfolio/">wasifizhar.com</a>
         </div>
-    </div>
+    </div> -->
     <!-- end of     construction, -->
 
     <div class="back-blur">
@@ -28,8 +28,8 @@
             </div>
             <div id="nav" class="nav">
                 <ul>
-                    <li><a href="certifications.html">Experience <span> ( ) </span></a></li>
-                    <li><a href="projects.html"> Work <span> ( ) </span></a></li>
+                    <li class="active-nav"><a href="#experience-nav">Experience <span> ( ) </span></a></li>
+                    <li><a href="#work-nav"> Work <span> ( ) </span></a></li>
                     <li><a href="contact.html">Certificate <span> ( ) </span></a></li>
                     <li><a href="about.html">Education <span> ( ) </span> </a></li>
                     <li><a href="contact.html"> Contact <span> ( ) </span></a></li>
@@ -39,11 +39,11 @@
             <!-- <div class="mv-nav" style="display:none"> -->
             <div class="mv-nav">
                 <ul>
-                    <li><a href="certifications.html">Experience <span> ( ) </span></a></li>
-                    <li><a href="projects.html"> Work <span> ( ) </span></a></li>
-                    <li><a href="contact.html">Certificate <span> ( ) </span></a></li>
-                    <li><a href="about.html">Education <span> ( ) </span> </a></li>
-                    <li><a href="contact.html"> Contact <span> ( ) </span></a></li>
+                    <li><a href="#experience-nav" onclick="onx()">Experience <span> ( ) </span></a></li>
+                    <li><a href="#work-nav" onclick="onx()"> Work <span> ( ) </span></a></li>
+                    <li><a href="contact.html" onclick="onx()">Certificate <span> ( ) </span></a></li>
+                    <li><a href="about.html" onclick="onx()">Education <span> ( ) </span> </a></li>
+                    <li><a href="contact.html" onclick="onx()"> Contact <span> ( ) </span></a></li>
                 </ul>
             </div>
 
@@ -67,7 +67,7 @@
                         href="#">work</a>.
                 </p>
                 <div class="resume">
-                    <a href="./images/Wasif's Resume.pdf" download="" target="_blank">
+                    <a href="./docs/Wasif's Resume.pdf" download="" target="_blank">
                         <p>My Resume</p>
                     </a>
                 </div>
@@ -75,13 +75,129 @@
 
             <!-- End of intro, -->
 
-            <!-- Start of About -->
+            <!-- Start of experience -->
+            <section id="experience-nav"></section>
             <div id="experience" class="experience-con">
-                <h1>Experience.display<span>()</span>;
-                </h1>
+                <div class="body-con">
+                    <div class="con_exp">
+                        <div class="main-exp">                       
+                        <h1>Experience.display<span>()</span>;</h1>
+                        <ul class="cards-exp">
+                            
+                            <li class="cards_item-exp">
+                            <div class="card-exp">
+                                <div class="card_image-exp"><img src="./images/c3-exp.png"></div>
+                                <div class="card_content-exp">
+                                <h2 class="card_title-exp">C3 EXPERIENTIAL LEARNING PRIVATE LIMITED</h2>
+                                <p class="card_text-exp">2 Months Internship as a Front-end Developer</p>
 
+                                    <ul class="tech-stack">
+                                        <li> <a href="https://github.com/wasif-izar/" target="_blank"><i class="fa fa-github"
+                                            aria-hidden="true"></i></a></li>
+                                            <li><a href="https://www.linkedin.com/in/wasif-izar-a32935171/" target="_blank"><i
+                                                class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                                <li> <a href="https://www.instagram.com/wasif_izhar_32/" target="_blank"><i class="fa fa-instagram"
+                                                    aria-hidden="true"></i></a></li>
+                                                    <li> <a href="https://www.twitter.com/wasif_izhar/" target="_blank"><i class="fa fa-twitter"
+                                                        aria-hidden="true"></i></a></li>
+                                    </ul>
+                           
+                            
+                           
+                           
+
+                                <a href="./docs/Internship Certificate - Wasif.pdf" target="_blank"><button class="btn-exp card_btn">View Certificate</button></a>
+                                </div>
+                            </div>
+                            </li>
+                            
+                            <li class="cards_item-exp">
+                            <div class="card-exp">
+                                <div class="card_image-exp"><img src="./images/wereon-exp.png"></div>
+                                <div class="card_content-exp">
+                                <h2 class="card_title-exp">WEREON Co.</h2>
+                                <p class="card_text-exp">1 Months Internship as a Front-end Developer on
+                                    <br>
+                                    Company's  clients' Websites and Portfolios
+                                </p>
+                                <a href="./docs/wasifcert.pdf" target="_blank"><button class="btn-exp card_btn">View Certificate</button></a>
+                                </div>
+                            </div>
+                            </li>
+                            
+                            <!-- <li class="cards_item-exp">
+                            <div class="card-exp">
+                                <div class="card_image-exp"><img src="https://picsum.photos/500/300/?image=11"></div>
+                                <div class="card_content-exp">
+                                <h2 class="card_title-exp">Card Grid Layout</h2>
+                                <p class="card_text-exp">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                                <button class="btn-exp card_btn">Read More</button>
+                                </div>
+                            </div>
+                            </li> -->
+                            
+                        </ul>
+                        
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- End of About -->
+            <!-- End of experience -->
+
+            
+            <!-- Start of Work -->
+            <section id="work-nav"></section>
+            <div id="work" class="work-con">
+                <div class="body-con">
+                    <div class="con_exp">
+                        <div class="main-exp">                       
+                        <h1>Work.display<span>()</span>;</h1>
+                        <ul class="cards-exp">
+                            
+                            <li class="cards_item-exp">
+                            <div class="card-exp">
+                                <div class="card_image-exp"><img src="./images/c3-exp.png"></div>
+                                <div class="card_content-exp">
+                                <h2 class="card_title-exp">C3 EXPERIENTIAL LEARNING PRIVATE LIMITED</h2>
+                                <p class="card_text-exp">2 Months Internship as a Front-end Developer</p>
+                                <a href="./docs/Internship Certificate - Wasif.pdf" target="_blank"><button class="btn-exp card_btn">View Certificate</button></a>
+                                </div>
+                            </div>
+                            </li>
+                            
+                            <li class="cards_item-exp">
+                            <div class="card-exp">
+                                <div class="card_image-exp"><img src="./images/wereon-exp.png"></div>
+                                <div class="card_content-exp">
+                                <h2 class="card_title-exp">WEREON Co.</h2>
+                                <p class="card_text-exp">1 Months Internship as a Front-end Developer on
+                                    <br>
+                                    Company's  clients' Websites and Portfolios
+                                </p>
+
+                                <a href="./docs/wasifcert.pdf" target="_blank"><button class="btn-exp card_btn">View Certificate</button></a>
+                                </div>
+                            </div>
+                            </li>
+                            
+                            <!-- <li class="cards_item-exp">
+                            <div class="card-exp">
+                                <div class="card_image-exp"><img src="https://picsum.photos/500/300/?image=11"></div>
+                                <div class="card_content-exp">
+                                <h2 class="card_title-exp">Card Grid Layout</h2>
+                                <p class="card_text-exp">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                                <button class="btn-exp card_btn">Read More</button>
+                                </div>
+                            </div>
+                            </li> -->
+                            
+                        </ul>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Work -->
 
             <!-- Start of contact -->
             <div class="contact">
@@ -131,6 +247,12 @@
         btnx.setAttribute("style", "display:none");
         // sec.setAttribute("style", "filter: blur(0px);");
     })
+    function onx(){
+        mv_nav.setAttribute("style", "display:none");
+        btnm.setAttribute("style", "display:block");
+        btnx.setAttribute("style", "display:none");
+        // sec.setAttribute("style", "filter: blur(0px);");
+    }
     if (mv_nav.style.display == 'none') {
         btnx.setAttribute("style", "display:none");
         btnm.setAttribute("style", "display:none");
