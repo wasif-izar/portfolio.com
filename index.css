@@ -362,8 +362,8 @@ body{
 }
 
 .card_image-exp img {
-  height: max-content;
-  max-width: 100%;
+  height: auto;
+  max-width:100%;
   vertical-align: middle;
 }
 
@@ -444,6 +444,21 @@ body{
   font-weight: 400;
 }
 
+.tech-stack{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.tech-stack li{
+    margin: 10px;
+    margin-top: -10px;
+}
+.tech-stack li a{
+    text-decoration: none;
+    color:#e6f1ff;
+    font-size: 25px;
+}
+
 /* ==================End of Experience================= */
 @media(max-width:875px){
 
@@ -512,4 +527,5 @@ body{
         font-size: 24px;       
     }
 }
+
 /* End of contact */
