@@ -34,7 +34,7 @@
                     <li class="active-nav"><a href="#experience-nav">Experience <span> ( ) </span></a></li>
                     <li><a href="#work-nav"> Work <span> ( ) </span></a></li>
                     <li><a href="#certificate-nav">Certificate <span> ( ) </span></a></li>
-                    <li><a href="#">Education <span> ( ) </span> </a></li>
+                    <li><a href="#education-nav">Education <span> ( ) </span> </a></li>
                     <li><a href="#contact-nav"> Contact <span> ( ) </span></a></li>
                 </ul>
             </div>
@@ -45,7 +45,7 @@
                     <li><a href="#experience-nav" onclick="onx()">Experience <span> ( ) </span></a></li>
                     <li><a href="#work-nav" onclick="onx()"> Work <span> ( ) </span></a></li>
                     <li><a href="#certificate-nav" onclick="onx()">Certificate <span> ( ) </span></a></li>
-                    <li><a href="#" onclick="onx()">Education <span> ( ) </span> </a></li>
+                    <li><a href="#education-nav" onclick="onx()">Education <span> ( ) </span> </a></li>
                     <li><a href="#contact-nav" onclick="onx()"> Contact <span> ( ) </span></a></li>
                 </ul>
             </div>
@@ -219,7 +219,7 @@
             
         <!--Start of certificate-->
         <div id="certificate-nav"></div> 
-        <section id="gtco-our-team" data-section="Menu">
+        <section class="certifications" data-section="Menu">
             <div class="certificate-con">
                 <h1>Certificate.display<span>()</span>;</h1>
             </div>
@@ -272,6 +272,98 @@
                 });
           </script>
         <!--End of certificate-->
+
+        <section id="education-nav"></section>
+        <section id="Education">
+            <div class="education-con">
+              
+                <div class="wrapper animate-box" data-animate-effect="fadeIn">
+                    <div class="card">
+                        <div class="card-thumb">
+                            <img src="images/sln-edu.jpg" class="client-img" alt="">
+                            <span class="client-name">HKE'S SLN College of Engineering</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="content-edu">
+                                <p class="board">Affiliated to VTU, Approved by AICTE, Accredited by NAAC</p>
+
+                                <p class="degree">B.E(Bachelor of Engineering) in
+                                    Computer Science & Engineering</p>
+
+                                <p class="year">From : 2019 - 2022</p>
+
+                                <p class="percentage">CGPA : 8.2/10</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+            
+                    <div class="card">
+                        <div class="card-thumb">
+                            <img src="images/gpt-edu.jpg" class="client-img" alt="">
+                            <span class="client-name">Government Polytechnic Raichur</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="content-edu">
+                                <p class="board">Affiliated to Board of Technical Education</p>
+
+                                <p class="degree">Diploma in Computer Science & Engineering</p>
+
+                                <p class="year">From : 2016 - 2019</p>
+
+                                <p class="percentage">Percentage : 88%</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-thumb">
+                            <img src="images/tagore-edu.jpg" class="client-img" alt="">
+                            <span class="client-name">Tagore Memorial High School, Raichur</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="content-edu">
+                                <p class="board">Karnataka Secondary Education Examination Board</p>
+
+                                <p class="degree">Higher Education and SSLC(10th)</p>
+
+                                <p class="year">Pass out : 2016</p>
+
+                                <p class="percentage">Percentage : 65.44%</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="indicators animate-box" data-animate-effect="fadeIn">
+                    <button class="active"></button>
+                    <button></button>
+                    <button></button>
+                </div>
+            </div>
+            </section>
+            <script>
+            
+                const wrapper = document.querySelector('.wrapper');
+                const indicators = [...document.querySelectorAll('.indicators button')];
+                
+                let currentTestimonial = 0; // Default 0
+                
+                indicators.forEach((item, i) => {
+                    item.addEventListener('click', () => {
+                        indicators[currentTestimonial].classList.remove('active');
+                        wrapper.style.marginLeft = `-${100 * i}%`;
+                        item.classList.add('active');
+                        currentTestimonial = i;
+                    })
+                })
+                
+                </script>
+
+        <!-- Start of Education -->
+
+        <!--End of Education-->
 
             <!-- Start of contact -->
             <section id="contact-nav"></section>
@@ -333,8 +425,4 @@
     }
 
 </script>
-
-
-
-
 </html>
